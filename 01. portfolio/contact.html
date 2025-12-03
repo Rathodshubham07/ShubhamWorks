@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ShubhamWorks — Contact</title>
+  <meta name="description" content="Contact Shubham Rathod — Industrial Automation Engineer." />
+  <link rel="stylesheet" href="../03. css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container nav">
+      <div class="brand"><div class="logo" aria-hidden="true"></div><div><div class="title">ShubhamWorks</div><div class="sub">Industrial Automation · E&TC</div></div></div>
+
+      <nav class="nav-center" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a class="btn-resume" href="../02. assets/Shubham_Rathod_Automation_Engineer_CV.pdf" target="_blank" rel="noopener">Download Resume</a>
+        <button id="menuToggle" class="menu-toggle" aria-expanded="false" aria-controls="mobileMenu">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="section-inner container">
+        <div class="section-head">
+          <h2 class="section-title">Contact</h2>
+          <div class="muted">Let's work together</div>
+        </div>
+
+        <div class="grid-2">
+          <form id="contactForm" class="card" novalidate>
+            <label class="muted" for="name">Full name</label>
+            <input id="name" name="name" type="text" required placeholder="Your name" />
+            <label class="muted" for="email">Email</label>
+            <input id="email" name="email" type="email" required placeholder="you@example.com" />
+            <label class="muted" for="message">Message</label>
+            <textarea id="message" name="message" required placeholder="Short message"></textarea>
+
+            <div style="display:flex;gap:12px;align-items:center;margin-top:6px">
+              <button class="btn btn-primary" type="submit">Send message (demo)</button>
+              <div id="formNotice" class="muted" aria-live="polite" style="font-size:0.95rem"></div>
+            </div>
+          </form>
+
+          <aside class="card">
+            <div style="margin-bottom:14px"><div class="muted">Email</div><div style="font-weight:700;margin-top:6px">shubhamrathod07@outlook.com</div></div>
+            <div style="margin-bottom:14px"><div class="muted">Phone</div><div style="font-weight:700;margin-top:6px">+91-82083-12560</div></div>
+            <div><div class="muted">Links</div><div style="display:flex;gap:10px;margin-top:10px"><a class="pill" href="https://linkedin.com/in/Shubhamr06" target="_blank" rel="noopener">LinkedIn</a><a class="pill" href="#" target="_blank" rel="noopener">GitHub</a><a class="pill" href="../02. assets/Shubham_Rathod_Automation_Engineer_CV.pdf" target="_blank" rel="noopener">Resume</a></div></div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container">© <span id="year"></span> Shubham Rathod — ShubhamWorks</div></footer>
+  <script src="../04. js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ShubhamWorks — Home</title>
+  <meta name="description" content="Shubham Rathod — Industrial Automation Engineer. ShubhamWorks portfolio." />
+  <link rel="stylesheet" href="../03. css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <div class="title">ShubhamWorks</div>
+          <div class="sub">Industrial Automation · E&TC</div>
+        </div>
+      </div>
+
+      <nav class="nav-center" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a class="btn-resume" href="../02. assets/Shubham_Rathod_Automation_Engineer_CV.pdf" target="_blank" rel="noopener">Download Resume</a>
+        <button id="menuToggle" class="menu-toggle" aria-expanded="false" aria-controls="mobileMenu">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero" aria-labelledby="home-title">
+      <div class="hero-inner container">
+        <aside class="hero-rail" aria-hidden="true">
+          <div class="rail-dot"></div>
+          <div class="rail-line"></div>
+          <div class="muted" style="transform:rotate(180deg); writing-mode:vertical-rl; font-size:0.72rem;">Scroll</div>
+        </aside>
+
+        <article class="hero-card glass" aria-labelledby="home-title">
+          <p class="eyebrow">Industrial Automation · PLC · SCADA · HMI</p>
+          <h1 id="home-title" class="title">Minimal. Precise. Reliable.
+            <span class="accent">ShubhamWorks</span>
+          </h1>
+          <p class="lead">I design and deliver Siemens-based PLC, HMI and SCADA systems for automotive, pharma and process industries. Clean control logic, reliable commissioning, and operator-friendly interfaces — engineered to run.</p>
+
+          <div class="actions">
+            <a class="btn btn-primary" href="projects.html">View Projects</a>
+            <a class="btn btn-ghost" href="contact.html">Get in touch</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- quick sections preview on home -->
+    <section class="section" aria-labelledby="home-sections">
+      <div class="section-inner container">
+        <div class="section-head">
+          <h2 id="home-sections" class="section-title">Snapshot</h2>
+          <div class="muted">Select a page to explore</div>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3 style="margin:0 0 8px 0">About Me</h3>
+            <p class="muted">Short intro, experience and approach to automation projects.</p>
+            <div style="margin-top:10px"><a class="btn btn-ghost" href="about.html">Learn more</a></div>
+          </div>
+
+          <aside class="card">
+            <h3 style="margin:0 0 8px 0">Skills & Tools</h3>
+            <div class="skills" style="margin-top:10px">
+              <span class="pill">Siemens S7</span>
+              <span class="pill">TIA Portal</span>
+              <span class="pill">WinCC</span>
+              <span class="pill">Ignition</span>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> Shubham Rathod — ShubhamWorks</div>
+  </footer>
+
+  <script src="../04. js/main.js"></script>
+</body>
+</html>
