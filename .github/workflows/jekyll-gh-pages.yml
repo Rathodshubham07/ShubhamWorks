@@ -36,13 +36,18 @@ jobs:
           cache: 'npm'
       
       - name: Install dependencies
-        run: npm ci
+        run: npm install
       
       - name: Build Next.js app
         run: npm run build
       
       - name: Add .nojekyll file
-        run: touch ./out/.nojekyll
+        run: |
+          if [ ! -d "./out" ]; then
+            echo "Error: out directory not found after build"
+            exit 1
+          fi
+          touch ./out/.nojekyll
       
       - name: Setup Pages
         uses: actions/configure-pages@v5
